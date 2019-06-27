@@ -1,0 +1,14 @@
+FROM node:8
+
+# Create app directory
+WORKDIR /usr/web
+COPY package*.json ./
+COPY webpack.config.js ./
+RUN apt install curl -y
+COPY server.js server.js
+COPY app /usr/web/app
+COPY public /usr/web/public
+RUN npm install
+RUN npm run bundle
+
+CMD [ "npm", "start" ]

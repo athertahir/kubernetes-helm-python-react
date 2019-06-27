@@ -1,0 +1,14 @@
+replicaCount: 1
+
+frontend:
+  image:
+    name: athertahir/frontend-react
+    tag: latest
+    pullPolicy: Always
+  applabel: frontend
+  service:
+    type: LoadBalancer
+    port: 80
+
+backend:
+  HostName: "http://backend.default.svc.cluster.local"

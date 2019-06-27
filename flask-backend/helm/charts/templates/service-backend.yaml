@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend
+spec:
+  selector:
+    app: {{ .Values.backend.applabel }}
+  ports:
+  - protocol: TCP
+    port: {{ .Values.backend.service.port }}
+    targetPort: {{ .Values.backend.flask.port }}
+  type: {{ .Values.backend.service.type }}

@@ -1,0 +1,15 @@
+replicaCount: 1
+
+backend:
+  image:
+    name: athertahir/flask-backend
+    tag:  "latest"
+    pullPolicy: Always
+  applabel: backend
+  service:
+    type: ClusterIP #ClusterIP
+    port: 80
+  flask:
+    port: 5000
+  env:
+    Name: flask-app

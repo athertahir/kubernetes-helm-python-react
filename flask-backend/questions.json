@@ -1,0 +1,63 @@
+{
+    "title": "Demo Questionnaire",
+    "data": {
+    "1" : {
+		"type": "question",
+        "response": "Are you hungry?",
+        "answers": {
+            "Yes": "2",
+            "No":  "3"
+        }
+    },
+    "3": {
+        
+        "type": "acknowledgement",
+        "response": "Ok. Call me when you're hungry."
+    },
+    "2": {
+        
+        "type": "question",
+        "response": "What would you like to eat?",
+        "answers": {
+            "Hamburger": "4",
+            "Pop": "5",
+            "Chicken/Corn": "6",
+            "Pizza": "7"
+        }
+    },
+    "4": {
+        
+        "type": "acknowledgement",
+        "response": "Nice, I will order a hamburger for you!"
+    },
+    "5": {
+        
+        "type": "acknowledgement",
+        "response": "Nice, I will order a Pop for you!"
+    },
+    "6": {
+        
+        "type": "acknowledgement",
+        "response": "Nice, I will order a Chicken/Corn for you!"
+    },
+    "7": {
+        
+        "type": "question",
+        "response": "Would you like pizza with mushrooms?",
+        "answers":  {
+            "Yes": "8",
+            "No":  "9"
+        }
+    },
+    "8": {
+        
+        "type": "acknowledgement",
+        "response": "Ok, I will order the best pizza in town for you"
+    },
+    "9": {
+       
+        "type": "acknowledgement",
+        "response": "No? Well... stay hungry then"
+        }
+    }
+}
